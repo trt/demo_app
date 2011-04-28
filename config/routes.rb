@@ -1,9 +1,8 @@
 DemoApp::Application.routes.draw do
-  resources :microposts
-
-  resources :users
-
-  # The priority is based upon order of creation:
+	resources :users
+	resources :microposts
+	root :to => 'users#index'
+	# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
